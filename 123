@@ -1,0 +1,10 @@
+<meta charset='utf-8'>
+<script>
+var userAnswer = prompt("Висит груша нельзя скушать");
+var answer = ("Лампочка");
+
+if(userAnswer == "Лампочка"){
+document.write("Правильно!!");
+}else document.write("Неправильно!!");
+
+</script>
