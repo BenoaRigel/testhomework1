@@ -1,8 +1,12 @@
 <meta charset='utf-8'>
 <script>
-var pay = prompt("Введите сумму");
-		var proc = prompt("Введите процент");
-		var resulte = ((pay + proc ) / 100);
+	var pay = prompt("Введите сумму");
+	var proc = prompt("Введите процент");
 	
-	alert("Сумма = " +  resulte);
+	var resulte1 = (Number(( pay / 100 * (proc * 1))) + Number(pay));
+	var resulte2 = (Number(( pay / 100 * (proc * 2))) + Number(pay));
+	var resulte3 = (Number(( pay / 100 * (proc * 3))) + Number(pay));
+	var resulte4 = (Number(( pay / 100 * (proc * 4))) + Number(pay));
+	var resulte5 = (Number(( pay / 100 * (proc * 5))) + Number(pay));
+		alert("Размер вклада на ближайшие 5 лет\nСумма за год = " +  resulte1 + "\nСумма за 2 года = " + resulte2 + "\nСумма за 3 года = " +  resulte3 + "\nСумма за 4 года = " + resulte4 + "\nСумма за 5 лет = " + resulte5);		
 </script>
