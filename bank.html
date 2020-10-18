@@ -2,11 +2,13 @@
 <script>
 	var pay = prompt("Введите сумму");
 	var proc = prompt("Введите процент");
-	
-	var resulte1 = (Number(( pay / 100 * (proc * 1))) + Number(pay));
-	var resulte2 = (Number(( pay / 100 * (proc * 2))) + Number(pay));
-	var resulte3 = (Number(( pay / 100 * (proc * 3))) + Number(pay));
-	var resulte4 = (Number(( pay / 100 * (proc * 4))) + Number(pay));
-	var resulte5 = (Number(( pay / 100 * (proc * 5))) + Number(pay));
-		alert("Размер вклада на ближайшие 5 лет\nСумма за год = " +  resulte1 + "\nСумма за 2 года = " + resulte2 + "\nСумма за 3 года = " +  resulte3 + "\nСумма за 4 года = " + resulte4 + "\nСумма за 5 лет = " + resulte5);		
+
+	   for(let i = 1; i < 6; i++){
+		  var resulte1 = (Number(( pay / 100 * (proc * i))) + Number(pay));
+          if (i == 1){alert("Размер вклада на ближайшие 5 лет\nСумма за год = " +  resulte1);}
+		   if (i == 2){alert("Размер вклада на ближайшие 5 лет\nСумма за 2 года = " +  resulte1);}
+		    if (i == 3){alert("Размер вклада на ближайшие 5 лет\nСумма за 3 года = " +  resulte1);}
+			 if (i == 4){alert("Размер вклада на ближайшие 5 лет\nСумма за 4 года = " +  resulte1);}
+			  if (i == 5){alert("Размер вклада на ближайшие 5 лет\nСумма за 5 лет = " +  resulte1);}
+		}
 </script>
