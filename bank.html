@@ -1,14 +1,13 @@
 <meta charset='utf-8'>
 <script>
-	var pay = prompt("Введите сумму");
-	var proc = prompt("Введите процент");
-
-	   for(let i = 1; i < 6; i++){
-		  var resulte1 = (Number(( pay / 100 * (proc * i))) + Number(pay));
-          if (i == 1){alert("Размер вклада на ближайшие 5 лет\nСумма за год = " +  resulte1);}
-		   if (i == 2){alert("Размер вклада на ближайшие 5 лет\nСумма за 2 года = " +  resulte1);}
-		    if (i == 3){alert("Размер вклада на ближайшие 5 лет\nСумма за 3 года = " +  resulte1);}
-			 if (i == 4){alert("Размер вклада на ближайшие 5 лет\nСумма за 4 года = " +  resulte1);}
-			  if (i == 5){alert("Размер вклада на ближайшие 5 лет\nСумма за 5 лет = " +  resulte1);}
+	var pay = +prompt("Введите сумму");
+	var proc = +prompt("Введите процент");
+		
+		for(i = 1; i <= 5; i++){
+			pay = pay +(pay * proc / 100);
+				document.write(pay);
+				document.write("<br>");
+				
 		}
+		
 </script>
